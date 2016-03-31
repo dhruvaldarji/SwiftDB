@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB6B5E281CA05D880071D3A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B5E271CA05D880071D3A0 /* AppDelegate.swift */; };
+		EB6B5E2A1CA05D880071D3A0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B5E291CA05D880071D3A0 /* HomeScreenViewController.swift */; };
+		EB6B5E2F1CA05D880071D3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6B5E2E1CA05D880071D3A0 /* Assets.xcassets */; };
+		EB6B5E321CA05D880071D3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6B5E301CA05D880071D3A0 /* LaunchScreen.storyboard */; };
+		EB6B5E3D1CA05D880071D3A0 /* SwiftDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B5E3C1CA05D880071D3A0 /* SwiftDBTests.swift */; };
+		EB6B5E481CA05D880071D3A0 /* SwiftDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B5E471CA05D880071D3A0 /* SwiftDBUITests.swift */; };
+		EB6E165B1CA2341A005779F5 /* InsertRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E165A1CA2341A005779F5 /* InsertRecordViewController.swift */; };
+		EB6E16611CA23622005779F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6E165E1CA23622005779F5 /* Main.storyboard */; };
+		EB6E16641CA24587005779F5 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E16631CA24587005779F5 /* Util.swift */; };
+		EB6E16661CA24690005779F5 /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E16651CA24690005779F5 /* StudentInfo.swift */; };
+		EB6E16681CA24901005779F5 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E16671CA24901005779F5 /* ModelManager.swift */; };
+		EB6E166B1CA24C40005779F5 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E166A1CA24C40005779F5 /* StudentCell.swift */; };
+		EB6E16751CA24D6F005779F5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E166F1CA24D6F005779F5 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB6E16761CA24D6F005779F5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E16711CA24D6F005779F5 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB6E16771CA24D6F005779F5 /* fmdb.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB6E16721CA24D6F005779F5 /* fmdb.txt */; };
+		EB6E16781CA24D6F005779F5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E16741CA24D6F005779F5 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB6E167C1CA24E89005779F5 /* Student.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EB6E167B1CA24E89005779F5 /* Student.sqlite */; };
+		EB6E167F1CA24FF0005779F5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6E167E1CA24FF0005779F5 /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB6B5E391CA05D880071D3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6B5E1C1CA05D880071D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6B5E231CA05D880071D3A0;
+			remoteInfo = SwiftDB;
+		};
+		EB6B5E441CA05D880071D3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6B5E1C1CA05D880071D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB6B5E231CA05D880071D3A0;
+			remoteInfo = SwiftDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB6B5E241CA05D880071D3A0 /* SwiftDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6B5E271CA05D880071D3A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6B5E291CA05D880071D3A0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = ViewControllers/HomeScreenViewController.swift; sourceTree = "<group>"; };
+		EB6B5E2E1CA05D880071D3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB6B5E311CA05D880071D3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB6B5E331CA05D880071D3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6B5E381CA05D880071D3A0 /* SwiftDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6B5E3C1CA05D880071D3A0 /* SwiftDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDBTests.swift; sourceTree = "<group>"; };
+		EB6B5E3E1CA05D880071D3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6B5E431CA05D880071D3A0 /* SwiftDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6B5E471CA05D880071D3A0 /* SwiftDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDBUITests.swift; sourceTree = "<group>"; };
+		EB6B5E491CA05D880071D3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6E165A1CA2341A005779F5 /* InsertRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsertRecordViewController.swift; path = ViewControllers/InsertRecordViewController.swift; sourceTree = "<group>"; };
+		EB6E165F1CA23622005779F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB6E16631CA24587005779F5 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Model/Util.swift; sourceTree = "<group>"; };
+		EB6E16651CA24690005779F5 /* StudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentInfo.swift; path = Model/StudentInfo.swift; sourceTree = "<group>"; };
+		EB6E16671CA24901005779F5 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelManager.swift; path = SwiftDB/Model/ModelManager.swift; sourceTree = SOURCE_ROOT; };
+		EB6E166A1CA24C40005779F5 /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentCell.swift; path = UITableViewCell/StudentCell.swift; sourceTree = "<group>"; };
+		EB6E166E1CA24D6F005779F5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = FMDB/FMDatabase.h; sourceTree = "<group>"; };
+		EB6E166F1CA24D6F005779F5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = FMDB/FMDatabase.m; sourceTree = "<group>"; };
+		EB6E16701CA24D6F005779F5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = FMDB/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EB6E16711CA24D6F005779F5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = FMDB/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EB6E16721CA24D6F005779F5 /* fmdb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fmdb.txt; path = FMDB/fmdb.txt; sourceTree = "<group>"; };
+		EB6E16731CA24D6F005779F5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FMDB/FMResultSet.h; sourceTree = "<group>"; };
+		EB6E16741CA24D6F005779F5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FMDB/FMResultSet.m; sourceTree = "<group>"; };
+		EB6E16791CA24DC0005779F5 /* SwiftDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6E167B1CA24E89005779F5 /* Student.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Student.sqlite; path = Model/Student.sqlite; sourceTree = "<group>"; };
+		EB6E167E1CA24FF0005779F5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		EBD61A741CA87EAF00EF2706 /* SwiftDB_Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftDB_Playground.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB6B5E211CA05D880071D3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6E167F1CA24FF0005779F5 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E351CA05D880071D3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E401CA05D880071D3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB6B5E1B1CA05D880071D3A0 = {
+			isa = PBXGroup;
+			children = (
+				EB6E167E1CA24FF0005779F5 /* libsqlite3.0.tbd */,
+				EB6B5E261CA05D880071D3A0 /* SwiftDB */,
+				EB6B5E3B1CA05D880071D3A0 /* SwiftDBTests */,
+				EB6B5E461CA05D880071D3A0 /* SwiftDBUITests */,
+				EB6B5E251CA05D880071D3A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB6B5E251CA05D880071D3A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB6B5E241CA05D880071D3A0 /* SwiftDB.app */,
+				EB6B5E381CA05D880071D3A0 /* SwiftDBTests.xctest */,
+				EB6B5E431CA05D880071D3A0 /* SwiftDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB6B5E261CA05D880071D3A0 /* SwiftDB */ = {
+			isa = PBXGroup;
+			children = (
+				EBD61A731CA87E9700EF2706 /* SampleFiles */,
+				EB6E167D1CA24F06005779F5 /* StoryBoards */,
+				EB6E166C1CA24D55005779F5 /* FMDB */,
+				EB6E16691CA24C21005779F5 /* UITableViewCell */,
+				EB6E16621CA2455D005779F5 /* Model */,
+				EB6E16591CA23382005779F5 /* ViewControllers */,
+				EB6B5E271CA05D880071D3A0 /* AppDelegate.swift */,
+				EB6B5E2E1CA05D880071D3A0 /* Assets.xcassets */,
+				EB6B5E331CA05D880071D3A0 /* Info.plist */,
+				EB6E16791CA24DC0005779F5 /* SwiftDB-Bridging-Header.h */,
+			);
+			path = SwiftDB;
+			sourceTree = "<group>";
+		};
+		EB6B5E3B1CA05D880071D3A0 /* SwiftDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB6B5E3C1CA05D880071D3A0 /* SwiftDBTests.swift */,
+				EB6B5E3E1CA05D880071D3A0 /* Info.plist */,
+			);
+			path = SwiftDBTests;
+			sourceTree = "<group>";
+		};
+		EB6B5E461CA05D880071D3A0 /* SwiftDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB6B5E471CA05D880071D3A0 /* SwiftDBUITests.swift */,
+				EB6B5E491CA05D880071D3A0 /* Info.plist */,
+			);
+			path = SwiftDBUITests;
+			sourceTree = "<group>";
+		};
+		EB6E16591CA23382005779F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6B5E291CA05D880071D3A0 /* HomeScreenViewController.swift */,
+				EB6E165A1CA2341A005779F5 /* InsertRecordViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB6E16621CA2455D005779F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E167B1CA24E89005779F5 /* Student.sqlite */,
+				EB6E16631CA24587005779F5 /* Util.swift */,
+				EB6E16651CA24690005779F5 /* StudentInfo.swift */,
+				EB6E16671CA24901005779F5 /* ModelManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB6E16691CA24C21005779F5 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E166A1CA24C40005779F5 /* StudentCell.swift */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		EB6E166C1CA24D55005779F5 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E166E1CA24D6F005779F5 /* FMDatabase.h */,
+				EB6E166F1CA24D6F005779F5 /* FMDatabase.m */,
+				EB6E16701CA24D6F005779F5 /* FMDatabaseAdditions.h */,
+				EB6E16711CA24D6F005779F5 /* FMDatabaseAdditions.m */,
+				EB6E16721CA24D6F005779F5 /* fmdb.txt */,
+				EB6E16731CA24D6F005779F5 /* FMResultSet.h */,
+				EB6E16741CA24D6F005779F5 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		EB6E167D1CA24F06005779F5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E165E1CA23622005779F5 /* Main.storyboard */,
+				EB6B5E301CA05D880071D3A0 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		EBD61A731CA87E9700EF2706 /* SampleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EBD61A741CA87EAF00EF2706 /* SwiftDB_Playground.playground */,
+			);
+			name = SampleFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB6B5E231CA05D880071D3A0 /* SwiftDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6B5E4C1CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDB" */;
+			buildPhases = (
+				EB6B5E201CA05D880071D3A0 /* Sources */,
+				EB6B5E211CA05D880071D3A0 /* Frameworks */,
+				EB6B5E221CA05D880071D3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDB;
+			productName = SwiftDB;
+			productReference = EB6B5E241CA05D880071D3A0 /* SwiftDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB6B5E371CA05D880071D3A0 /* SwiftDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6B5E4F1CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDBTests" */;
+			buildPhases = (
+				EB6B5E341CA05D880071D3A0 /* Sources */,
+				EB6B5E351CA05D880071D3A0 /* Frameworks */,
+				EB6B5E361CA05D880071D3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6B5E3A1CA05D880071D3A0 /* PBXTargetDependency */,
+			);
+			name = SwiftDBTests;
+			productName = SwiftDBTests;
+			productReference = EB6B5E381CA05D880071D3A0 /* SwiftDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB6B5E421CA05D880071D3A0 /* SwiftDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6B5E521CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDBUITests" */;
+			buildPhases = (
+				EB6B5E3F1CA05D880071D3A0 /* Sources */,
+				EB6B5E401CA05D880071D3A0 /* Frameworks */,
+				EB6B5E411CA05D880071D3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6B5E451CA05D880071D3A0 /* PBXTargetDependency */,
+			);
+			name = SwiftDBUITests;
+			productName = SwiftDBUITests;
+			productReference = EB6B5E431CA05D880071D3A0 /* SwiftDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB6B5E1C1CA05D880071D3A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dhruval Darji";
+				TargetAttributes = {
+					EB6B5E231CA05D880071D3A0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E7B5YVYAL4;
+					};
+					EB6B5E371CA05D880071D3A0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB6B5E231CA05D880071D3A0;
+					};
+					EB6B5E421CA05D880071D3A0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB6B5E231CA05D880071D3A0;
+					};
+				};
+			};
+			buildConfigurationList = EB6B5E1F1CA05D880071D3A0 /* Build configuration list for PBXProject "SwiftDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB6B5E1B1CA05D880071D3A0;
+			productRefGroup = EB6B5E251CA05D880071D3A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB6B5E231CA05D880071D3A0 /* SwiftDB */,
+				EB6B5E371CA05D880071D3A0 /* SwiftDBTests */,
+				EB6B5E421CA05D880071D3A0 /* SwiftDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB6B5E221CA05D880071D3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6B5E321CA05D880071D3A0 /* LaunchScreen.storyboard in Resources */,
+				EB6B5E2F1CA05D880071D3A0 /* Assets.xcassets in Resources */,
+				EB6E167C1CA24E89005779F5 /* Student.sqlite in Resources */,
+				EB6E16611CA23622005779F5 /* Main.storyboard in Resources */,
+				EB6E16771CA24D6F005779F5 /* fmdb.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E361CA05D880071D3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E411CA05D880071D3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB6B5E201CA05D880071D3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6E165B1CA2341A005779F5 /* InsertRecordViewController.swift in Sources */,
+				EB6E16661CA24690005779F5 /* StudentInfo.swift in Sources */,
+				EB6B5E2A1CA05D880071D3A0 /* HomeScreenViewController.swift in Sources */,
+				EB6B5E281CA05D880071D3A0 /* AppDelegate.swift in Sources */,
+				EB6E16781CA24D6F005779F5 /* FMResultSet.m in Sources */,
+				EB6E16641CA24587005779F5 /* Util.swift in Sources */,
+				EB6E16761CA24D6F005779F5 /* FMDatabaseAdditions.m in Sources */,
+				EB6E16681CA24901005779F5 /* ModelManager.swift in Sources */,
+				EB6E166B1CA24C40005779F5 /* StudentCell.swift in Sources */,
+				EB6E16751CA24D6F005779F5 /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E341CA05D880071D3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6B5E3D1CA05D880071D3A0 /* SwiftDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6B5E3F1CA05D880071D3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6B5E481CA05D880071D3A0 /* SwiftDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB6B5E3A1CA05D880071D3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6B5E231CA05D880071D3A0 /* SwiftDB */;
+			targetProxy = EB6B5E391CA05D880071D3A0 /* PBXContainerItemProxy */;
+		};
+		EB6B5E451CA05D880071D3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB6B5E231CA05D880071D3A0 /* SwiftDB */;
+			targetProxy = EB6B5E441CA05D880071D3A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB6B5E301CA05D880071D3A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6B5E311CA05D880071D3A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB6E165E1CA23622005779F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6E165F1CA23622005779F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB6B5E4A1CA05D880071D3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SwiftDB/SwiftDB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6B5E4B1CA05D880071D3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "./SwiftDB/SwiftDB-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB6B5E4D1CA05D880071D3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwiftDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddarji.SwiftDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB6B5E4E1CA05D880071D3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwiftDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddarji.SwiftDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB6B5E501CA05D880071D3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ddarji.SwiftDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDB.app/SwiftDB";
+			};
+			name = Debug;
+		};
+		EB6B5E511CA05D880071D3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ddarji.SwiftDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDB.app/SwiftDB";
+			};
+			name = Release;
+		};
+		EB6B5E531CA05D880071D3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ddarji.SwiftDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftDB;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EB6B5E541CA05D880071D3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ddarji.SwiftDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftDB;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB6B5E1F1CA05D880071D3A0 /* Build configuration list for PBXProject "SwiftDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6B5E4A1CA05D880071D3A0 /* Debug */,
+				EB6B5E4B1CA05D880071D3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6B5E4C1CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6B5E4D1CA05D880071D3A0 /* Debug */,
+				EB6B5E4E1CA05D880071D3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6B5E4F1CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6B5E501CA05D880071D3A0 /* Debug */,
+				EB6B5E511CA05D880071D3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6B5E521CA05D880071D3A0 /* Build configuration list for PBXNativeTarget "SwiftDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6B5E531CA05D880071D3A0 /* Debug */,
+				EB6B5E541CA05D880071D3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB6B5E1C1CA05D880071D3A0 /* Project object */;
+}
